@@ -1,0 +1,228 @@
+* {
+    margin: 0px;
+    background-color: #FEFEF2;
+    max-width: 100%;
+
+}
+
+#header {
+    width: 100%;
+    top: 0;
+    min-height: 70px;
+    padding: 0px 0px;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 244, 0.9);
+    z-index: 1;
+}
+
+
+.logo{width: 10%;
+    background: none;
+
+}
+
+
+#header-img {
+    width: 22vw;
+    margin: 5px 0px;
+    background: none;
+}
+
+
+
+h2 {
+    font-size: 2.5vw;
+    margin: 0px -10px;
+    padding: 0px 0px;
+    font-family: 'raleway';
+    background: transparent;
+    
+
+}
+
+#nav1 {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 1.vw;
+    font-family: 'raleway';
+    background: transparent;
+    font-style: italic;
+}
+
+
+nav li {
+    padding: 5px;
+    background: transparent;
+}
+
+nav li:hover {
+    text-decoration: underline;
+}
+
+#nav-bar {
+    background: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    background: transparent;
+
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+    margin-top: 10vw
+}
+.contenedor2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 14vw;
+    margin-top: 0vw
+}
+.titulo1 {
+    width: 100%;
+    text-align: left;
+    margin-left: 1%;
+    font-size: 2.5vw;  
+    font-family: 'raleway';
+}
+.titulo2 {
+    width: 100%;
+    text-align: right;
+    margin-right: 2%;
+    list-style: none;
+    font-size: 2.5vw;
+    font-family: 'raleway';
+}
+#contenedorfotos {
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+
+}
+#contenedorfotos2 {
+    width: 100%;
+    display: flex;
+    margin-top:3%;
+
+}
+#AgendP{
+    width: 35%;
+    
+}
+#Accesorios{
+    width: 35%;
+    
+}
+
+.seccion-media{
+    
+   display:grid;
+   grid-auto-rows: 1fr;
+   
+
+}
+.descripcion-media{
+    display: flex;
+    justify-content: space-around;
+
+}
+.tarjeta {
+
+    width: 100%;
+    margin: 0px;
+    padding: 1%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 400ms ease;
+    background: transparent;
+}
+
+.tarjeta:hover {
+    transform: translateY(-3%);
+    box-shadow: 0px 1px 10px;
+}
+.tituloagenda{
+    font-size: 3vw;
+}
+
+.iconos {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 10%;
+    margin-left: 1
+    0%;    
+    background: transparent;
+}
+
+i{background: transparent;
+font-size: 3vw;
+}
+li {
+    background: transparent;
+}
+
+.footerlist {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 20px 20px;
+    font-size: 3vw;
+    font-family: 'raleway';
+    list-style: none;
+    background-image:url(imagenes/ba5f5a6c90ebe666fe6ba195a8253afc.jpg);
+    
+          
+    }
+
+
+footer {
+    background-image:url(imagenes/ba5f5a6c90ebe666fe6ba195a8253afc.jpg);
+}
+
+span {
+    background: transparent;
+}
+
+.copy {
+    font-size: 2vw;
+    font-family: 'allura';
+    color: white;
+}
+
+
+
+@media (max-width:700px) {
+    #contenedorfotos {
+        display: flex;
+        flex-wrap: wrap;
+   
+    }
+
+    h2 {
+        display: none;
+    }
+
+    h1 {
+        font-size: 7vw;
+    }
+
+    #nav1 {
+        font-size: 2vw;
+    }
+
+
+}
