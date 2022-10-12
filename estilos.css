@@ -118,24 +118,41 @@ a {
 
 }
 #AgendP{
-    width: 35%;
+    width: 80%;
     
 }
 #Accesorios{
-    width: 35%;
+    width: 80%;
     
 }
 
 .seccion-media{
     
-   display:grid;
-   grid-auto-rows: 1fr;
+   display:flex;
+margin-left: 8%;
+   margin-top:5%;
+   width: 90%;
    
+
+   
+}
+.titulo-media{
+    font-size: 2vw;
+    font-family: 'Ubuntu';
 
 }
 .descripcion-media{
     display: flex;
     justify-content: space-around;
+
+}
+.descrip-media{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bold; 
+}
+.descripagenda{
+    font-size: 1vw;
+    font-family:'Ubuntu';
 
 }
 .tarjeta {
@@ -168,30 +185,39 @@ a {
     background: transparent;
 }
 
-i{background: transparent;
-font-size: 3vw;
+i {
+    background: transparent;
+font-size: 2.4vw;
+margin-top: 1.5%;
+margin-bottom: 2%;
+
+
 }
+
 li {
     background: transparent;
 }
 
+.titulo-informacion{
+    font-weight: bold;
+
+}
 .footerlist {
     display: flex;
-    justify-content: center;
-    margin-top: 40px;
+    justify-content: space-around;   
+    margin-top: 1%;
     padding: 20px 20px;
-    font-size: 3vw;
-    font-family: 'raleway';
-    list-style: none;
-    background-image:url(imagenes/ba5f5a6c90ebe666fe6ba195a8253afc.jpg);
-    
+    font-size: 1.4vw;
+    font-family: 'raleway';    
+    background:transparent;
+  
           
     }
+li{list-style: none;
 
-
-footer {
-    background-image:url(imagenes/ba5f5a6c90ebe666fe6ba195a8253afc.jpg);
 }
+.informacion {background: transparent;}
+
 
 span {
     background: transparent;
