@@ -1,10 +1,15 @@
+
+/*index */
+
 * {
     margin: 0px;
     background-color: #FEFEF2;
     max-width: 100%;
+   
 
 }
 
+/*header*/
 #header {
     width: 100%;
     top: 0;
@@ -74,13 +79,16 @@ a {
 
 }
 
+/*Agendas*/
+
 .contenedor {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
   
-    margin-top: 10vw
+    margin-top: 10vw;
+    
 }
 .contenedor2 {
     display: flex;
@@ -126,12 +134,14 @@ a {
     
 }
 
+/* seccion media*/
 .seccion-media{
     
    display:flex;
 margin-left: 8%;
    margin-top:5%;
    width: 90%;
+   
    
 
    
@@ -249,6 +259,16 @@ span {
     #nav1 {
         font-size: 2vw;
     }
+
+
+
+}
+
+/*formulario*/
+
+form{
+    margin-top: 20%;
+    margin-bottom: 10%;
 
 
 }
