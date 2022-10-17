@@ -12,7 +12,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
-<link href="estilos.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap" rel="stylesheet"> <!--font-family: 'Comforter Brush', cursive;-->
@@ -24,17 +23,24 @@
 <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet"> <!--font-family: 'Cedarville Cursive'-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/bootstrap.min.css">
-<script src="js/bootstrap.min.js"></script>
+
+<link href="estilos.css" rel="stylesheet">
+
+
+
+
+
 
 
 </head>
 
 <body>
+
+    
     <!--Header ,Barra navegacion-->
       <header id="header">
         <div class="logo">
@@ -57,31 +63,40 @@
 <!--Formulario-->
 
     <section id="formulario" >
-   <form class="row" action="micanorali@gmail.com"> 
-    <fieldset id="personales">Datos Personales<br>
-<div class="col-6">
-    <label for="nombre" class="form-label">Nombre</label>
-    <input type="text" name="nombre" id="nombre" required placeholder="Escribe tu Nombre"><br>
-    <input type="text" name="apellido" id="apellido" required placeholder="Apellido"><br>
-    <input type="text" name="localidad" id="correo" required placeholder="Localidad"><br>
-    <input type="number" name="telefono" id="nombre" required placeholder="Telefono de contacto"><br>
-</div>        
-</fieldset>
-<div class="col-6">
-          <p> Selecciona el canal de venta </p>
-          
-   <select id='modo-venta'>
-           <option value='redes'>Redes Sociales </option>
-           <option value='showroom'>Tienda online o showroom</option>
-           <option vaalue='local'>Local</option>
-           <option value='local2'>Mas de un local</option>
-           <option value='menor'>Quiero comprar por menor </option>
            
-       </select>
+    <form action= "" name="formularios" class="container text-center " method="get">    
+    <div class="col-6">
+   <label  class="form-label">Nombre</label><br>
+    <input type="text" class="form-control" name="nombres"  id="nombre"  placeholder="Ingrese su Nombre">
     <br>
-    <textarea name="comentario">Otra consulta</textarea>
-    <button type="submit" class="btn btn-danger"  >Enviar</button>
+  
+     <label  class="form-label">Apellido</label><br>
+    <input type="text"  name="apellido"  class="form-control"  id="apellido"  placeholder="Ingrese su Apellido">
+    <br>
+       
+    <label class="form-label">Correo Electronico</label><br>
+    <input type="text" class="form-control" name="correo" id="correo" placeholder="Ingrese su Correo"><br>
+   
+    <label class="form-label">Telefono de contacto</label><br>
+    <input type="text" class="form-control" name="telefono" id="nombre"  placeholder="Ingrese su Telefono de contacto"><br>
+    
+    <p> Selecciona el canal de venta </p>
+          
+   <select id='modo-venta' class="form-control">
+           <option value='redes'name='redes'>Redes Sociales </option>
+           <option value='showroom'name='showroom'>Tienda online o showroom</option>
+           <option value='local' name='local'>Local</option>
+           <option value='local2' name='local2'>Mas de un local</option>
+           <option value='menor' name='menor'>Quiero comprar por menor </option>
+                    
+     </select>
+    
+     
+           <br>
+          <textarea name="comentario" class="form-control">Otra consulta</textarea><br>
+      <input type="submit"  class="btn btn-secondary" id= "btn" name= "btn" value= "Enviar">
     </div>
+    </form>
 </form>
 </section>
      <footer>
@@ -130,5 +145,8 @@
        </div>
                 
     </footer>
+
+<script src="validacion.js"></script>
+    
 </body>
 </html>

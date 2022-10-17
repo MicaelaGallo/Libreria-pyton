@@ -265,10 +265,17 @@ span {
 }
 
 /*formulario*/
+body {
+    background-color:#FEFEF2;
+}
 
-form{
-    margin-top: 20%;
-    margin-bottom: 10%;
-
+#formulario{
+    margin-top: 10%;
+    margin-left: 20%;
+background-color: #FEFEF2;
+    
+  
 
 }
+
+
