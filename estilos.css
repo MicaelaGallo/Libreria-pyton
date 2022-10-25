@@ -36,15 +36,16 @@
     background: none;
 }
 
-
+#menu, #menu-check{
+    display:none;
+}
 
 h2 {
     font-size: 2.5vw;
     margin: 0px -10px;
     padding: 0px 0px;
     font-family: 'raleway';
-    background: transparent;
-    
+    background: transparent;    
 
 }
 
@@ -55,7 +56,7 @@ h2 {
     font-size: 1.vw;
     font-family: 'raleway';
     background: transparent;
-    font-style: italic;
+    
 }
 
 
@@ -141,9 +142,7 @@ a {
 margin-left: 8%;
    margin-top:5%;
    width: 90%;
-   
-   
-
+    
    
 }
 .titulo-media{
@@ -223,6 +222,8 @@ li {
   
           
     }
+    iframe{ width: 30vw;
+    height: 12vw;}
 li{list-style: none;
 
 }
@@ -240,30 +241,6 @@ span {
 }
 
 
-
-@media (max-width:700px) {
-    #contenedorfotos {
-        display: flex;
-        flex-wrap: wrap;
-   
-    }
-
-    h2 {
-        display: none;
-    }
-
-    h1 {
-        font-size: 7vw;
-    }
-
-    #nav1 {
-        font-size: 2vw;
-    }
-
-
-
-}
-
 /*formulario*/
 body {
     background-color:#FEFEF2;
@@ -274,8 +251,224 @@ body {
     margin-left: 20%;
 background-color: #FEFEF2;
     
-  
-
 }
 
+/*Responsive*/
+
+@media (max-width:768px) {
+#header{
+    justify-content: flex-start;
+   
+    
+}
+   
+    .contenedor {
+        margin-top: 20%;
+    }
+    #menu-check:not(:checked) ~ nav{
+        display:none; 
+    }
+    #menu-check:checked~ nav{
+        display: block;
+    }
+        #menu-check:checked~.logo {
+            display: flex;
+            justify-content: flex-start;
+        }
+        .logo {
+            width: 19vw;
+            margin-left: 10%;
+    
+        }
+    #menu{
+        display: block;
+        
+        font-size:2.5em ;
+        font-weight: bold;       
+        position:absolute;
+        right: 0.5em;
+        top:0.5em;
+        z-index: 9999;
+        
+    }
+
+    #menu:hover{
+        
+        border:1px solid; 
+        border-radius: 0.2em;
+    }
+    #menu-cerrar{
+        display: none;
+    }
+
+    #menu-check:checked ~ label #menu-abrir{
+        display: none;
+    }
+
+    #menu-check:checked ~ label #menu-cerrar{
+        display: block;
+    }
+
+    #header #nav-bar{
+        position: absolute;
+        top:0;
+        right: 0;
+        height: 100%;
+        
+        padding-top:0.5em;
+        padding-right: 2.5em;
+        opacity: 0.8;
+        font-size: 1.8em;
+        
+    }
+
+    #header #nav-bar ul, #header #nav-bar ul li {
+        display: block;
+        text-align: right;
+        font-size: 1.1em;
+
+    } 
+    #contenedorfotos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;        
+
+    }
+
+    #contenedorfotos2 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+
+
+    }
+
+    .tarjeta {
+        width: 35%;
+    }
+
+    h2 {
+        display: none;
+    }
+
+
+    #nav1 {
+        font-size: 2vw;
+    }
+.descripagenda {
+   display: none;}
+
+.descrip-media {
+    display: none;
+}
+.seccion-media{
+    display:flex;
+    flex-wrap: wrap;
+}
+.titulo1{ font-size: 4vw;
+text-align: center;}
+.titulo2{font-size: 4vw;
+text-align: center;}
+
+
+#accesorio2{display: none;}
+
+#marcador5{display: none;}
+.footerlist { 
+  
+    font-size: 1.8vw;
+  
+}
+
+
+
+}
+@media (max-width:500px) {
+    .logo {
+        width: 18vw;
+    }
+
+    .contenedor {
+        margin-top: 20%;
+    }
+
+    #contenedorfotos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+
+    }
+
+    #contenedorfotos2 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+
+
+    }
+
+    .tarjeta {
+        width: 35%;
+    }
+
+    h2 {
+        display: none;
+    }
+
+
+    #nav1 {
+        font-size: 2vw;
+    }
+
+    .descripagenda {
+        display: none;
+    }
+
+    .descrip-media {
+        display: none;
+    }
+
+    .seccion-media {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .titulo1 .titulo2 {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+      #accesorio2 {
+        display: none;
+    }
+
+    #marcador5 {
+        display: none;
+    }
+#agenda3 {
+    display: none;
+}
+
+#accesorio1 {
+    display: none;
+}
+
+#marcador4 {
+    display: none;
+}
+
+#marcador3 {
+    display: none;
+}
+    .footerlist {
+
+        font-size: 1.8vw;
+
+    }
+
+
+}
 
