@@ -351,7 +351,26 @@ body {
         justify-content: flex-start;
 
     }
+.buttonpagar{
+    background-color: #d6b39e;        
+        border: none;
+        color: rgb(255, 255, 255);
+        padding: 10px 15px;
+    font-size: 2.2em;
+        font-weight: bold;
+        position: absolute;        
+        left: 80%;
+        top:15%;
+        margin-right: 15%;
+        z-index: 9999;
+        background: none;
+        opacity: 50%;
 
+
+}
+.buttonpagar:hover{
+    font-size: 2.3em;
+}
     #nav1 li {
         
         background-color: rgba(207, 174, 159, 0.7);
@@ -548,7 +567,9 @@ body {
 
 
     }
-
+.buttonpagar{
+    right:20% ;
+}
     .tarjeta {
         width: 35%;
     }

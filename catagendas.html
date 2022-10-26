@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/antipasto" rel="stylesheet">
+
+    <link href="estilos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap" rel="stylesheet">
+    <!--font-family: 'Comforter Brush', cursive;-->
+    <script src="https://kit.fontawesome.com/3c27ee3c9d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <!--font-family: 'Cedarville Cursive'-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title> Catalogo Agendas</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo">
+            <img id="header-img"
+                src="imagenes/2022-10-03 (2).png"
+                alt="logo" />
+        </div>
+        <h2>Articulos de libreria</h2>
+       
+        <input type="checkbox" id="menu-check">
+       <label id="menu" for="menu-check">
+        <span id="menu-abrir">&#9776;</span>
+        <span id="menu-cerrar">&#9776;</span>
+       </label>
+        
+        <nav id="nav-bar">
+            <ul id='nav1'>
+                <li><a class="nav-link" href="index.html">Inicio </a></li>
+                <li><a class="nav-link" href="catagendas.html">Agendas y accesorios  </a></li>
+                <li><a class="nav-link" href="lapices.html">Marcadores y lapices  </a></li>
+                <li><a class="nav-link" href="formula.html">Formulario mayorista</a></li>
+                <i class="fa-light fa-cart-shopping-fast"></i>
+                  
+            </ul>
+        
+        </nav>
+        <button id="checkout" class="buttonpagar" onclick="pay()"> 🛒</button>
+    </header>
+
+
+    <div class="contenedor">
+        <div class="titulo">Agendas y accesorios</div>
+        <hr>
+        <div class="caja Producto"> <img src="accesorios/agenda1.jpg">
+            <p>AGENDA MAY</p>
+            <div class="precio">
+                <span>AR$</span> 50,00
+            </div>
+            <a class="button" onclick="add ('agenda1', 50)">Comprar</a>
+        </div>
+        <div class="caja Producto"> <img src="accesorios/agenda2.jpg">
+            <p>AGENDA BYN</p>
+            <div class="precio">
+                <span>AR$</span> 75,00
+            </div> <a class="button" onclick="add ('agenda2', 75)">Comprar</a>
+        </div>
+        <div class="caja Producto"> <img src="accesorios/agenda 3.jpg">
+            <p>AGENDA HOJAS</p>
+            <div class="precio">
+                <span>AR$</span> 60,00
+            </div> <a class="button" onclick="add ('agenda 3', 60)">Comprar</a>
+        </div>
+        <div class="caja Producto"> <img src="accesorios/agenda 4.jpg">
+            <p>AGENDA COLORES</p>
+            <div class="precio">
+                <span>AR$</span> 90,00
+            </div> <a class="button" onclick="add ('agenda 4', 90)">Comprar</a>
+        </div>
+        <div class="caja Producto"> <img src="accesorios/agenda5.jpg">
+            <p>AGENDA DREAMS</p>
+            <div class="precio">
+                <span>AR$</span> 30,00
+            </div> <a class="button" onclick="add ('agenda5', 30)">Comprar</a>
+        </div>
+        <div class="caja Producto"> <img src="accesorios/agenda6.jpeg">
+            <p>AGENDA CONSPIRA</p>
+            <div class="precio">
+                <span>AR$</span> 65,00
+            </div> <a class="button" onclick="add ('agenda6', 65)">Comprar</a>
+        </div>
+        <div class="caja Producto"> <img src="accesorios/agenda7.jpg">
+            <p>AGENDA SERENA</p>
+            <div class="precio">
+                <span>AR$</span> 70,00
+            </div> <a class="button" onclick="add ('agenda7', 70)">Comprar</a>
+        </div>
+        <div class="caja Producto"> <img src="accesorios/accesorio 1.jpg">
+            <p>SET DE CLIPS</p>
+            <div class="precio">
+                <span>AR$</span> 80,00
+            </div> <a class="button" onclick="add ('accesorio 1', 80)">Comprar</a>
+        </div>
+        <div class="caja Producto"> <img src="accesorios/accesorio 2.jpg">
+            <p>CINTAS CON DISEÑO</p>
+            <div class="precio">
+                <span>AR$</span> 30,00
+            </div> <a class="button" onclick="add ('accesorio 2', 35)">Comprar</a>
+        </div>
+        <div class="caja Producto"> <img src="accesorios/accesorio4.jpg">
+            <p>CARTUCHERA CACTUS</p>
+            <div class="precio">
+                <span>AR$</span> 45,00
+            </div> <a class="button" onclick="add ('accesorio4', 45)">Comprar</a>
+        </div>
+        <div class="caja Producto"> <img src="accesorios/accesorio5.jpg">
+            <p>NOTAS ADHESIVAS</p>
+            <div class="precio">
+                <span>AR$</span> 40,00
+            </div> <a class="button" onclick="add ('accesorio5', 40)">Comprar</a>
+        </div>
+        <div class="caja Producto"> <img src="accesorios/accesorio6.jpg">
+            <p>CLIP CAT </p>
+            <div class="precio">
+                <span>AR$</span> 20,00
+            </div> <a class="button" onclick="add ('accesorio6', 20)">Comprar</a>
+        </div>
+    </div>
+
+
+ <footer>
+        
+    <div class='footerlist'>
+        <div class="Informacion">
+               <p class="titulo-informacion">Productos</p>      
+              <ul>
+                <li>Agendas 2022</li>
+                <li>Cuadernos y planificadores</li>
+                <li>Accesorios</li>
+                <li>Accesorios personalizados</li>
+       
+              </ul> 
+        </div>
+            
+        <div class="Informacion">  
+            <p class="titulo-informacion">Servicios</p>
+            <ul>
+              <li>Venta Mayorista</li>
+              <li>Diseños personalizados </li>
+               <li>Presupuestos </li>
+            </ul>
+        </div>
+        
+        <div class="Informacion">
+            <p class="titulo-informacion">Centro de contacto</p>      
+            <ul>
+              <li>Direccion: San Martin 2378 </li>
+              <li>Mail: fbmmayorista@libreria.com.ar</li>
+              <li>Telefono: (54)223-5498845</li>
+            </ul>
+    
+        </div> 
+
+        <div class="ubi">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d786.0005224431766!2d-57.54476501544016!3d-38.000411727130846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dc1ae2910903%3A0x57b8a99376d56e88!2sSan%20Mart%C3%ADn%202378%2C%20B7600%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1665785689063!5m2!1sen!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+   </div>
+<hr>
+    <div class="iconos">
+        <a class="nav" href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a class="nav" href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+          <a class="nav" href="#"> <i class="fa-brands fa-whatsapp"></i></a>
+        
+       </div>
+                
+    </footer>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
