@@ -546,7 +546,7 @@ body {
     .logo {
         width: 18vw;
     }
-
+ 
     .contenedor {
         margin-top: 20%;
     }
@@ -558,7 +558,7 @@ body {
 
 
     }
-
+   
     #contenedorfotos2 {
         display: flex;
         flex-wrap: wrap;
@@ -567,9 +567,7 @@ body {
 
 
     }
-.buttonpagar{
-    right:20% ;
-}
+
     .tarjeta {
         width: 35%;
     }
